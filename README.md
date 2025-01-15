@@ -1,10 +1,12 @@
-# Luxmètre - Système de Mesure de Luminosité
+# Projet Luxmètre - Système de Mesure de Luminosité
 
 ## Introduction
 
-Ce projet consiste à concevoir et réaliser un **luxmètre**, un système capable de mesurer l’intensité lumineuse ambiante (en Lux). Développé à l’aide du microcontrôleur **PIC16F876A**, il combine des éléments matériels et logiciels pour fournir une mesure précise et un affichage en temps réel.
+Ce projet Luxmètre consiste à concevoir et réaliser un **luxmètre**, un système capable de mesurer l’intensité lumineuse ambiante (en Lux). Développé à l’aide du microcontrôleur **PIC16F876A**, ce projet combine des éléments matériels et logiciels pour fournir une mesure précise et un affichage en temps réel.
 
 Le système utilise un capteur de luminosité TEMT6000 pour mesurer la lumière ambiante, un microcontrôleur pour traiter les données, et un écran LCD pour afficher les résultats.
+
+La programmation du microcontrôleur est réalisée en **assembleur** avec **MPLAB v8.92**.
 
 ## Objectifs du projet
 
@@ -28,7 +30,11 @@ Ce dépôt contient les fichiers suivants :
 
 - **[README.md](./README.md)** : Ce fichier.
 - **[images/Luxmetre_PCB.png](./images/Luxmetre_PCB.png)** : Schéma du circuit du luxmètre.
-  
+
+Voici le circuit PCB que nous avons conçu et réalisé pour ce projet :
+
+![Luxmètre PCB](./images/Luxmetre_PCB.png)
+
 ---
 
 Ce projet permet d’acquérir une compréhension pratique et théorique de la conception et de la réalisation d'un luxmètre, en intégrant les aspects matériels et logiciels.
