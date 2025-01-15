@@ -1,54 +1,34 @@
 # Luxmètre - Système de Mesure de Luminosité
 
-## Description
+## Introduction
 
-Ce projet consiste à concevoir et réaliser un **luxmètre**, un système capable de mesurer et afficher l’intensité lumineuse ambiante (en Lux). Développé à l’aide du microcontrôleur **PIC16F876A**, ce projet combine des éléments matériels et logiciels pour une mesure précise et un affichage en temps réel.
+Ce projet consiste à concevoir et réaliser un **luxmètre**, un système capable de mesurer l’intensité lumineuse ambiante (en Lux). Développé à l’aide du microcontrôleur **PIC16F876A**, il combine des éléments matériels et logiciels pour fournir une mesure précise et un affichage en temps réel.
 
+Le système utilise un capteur de luminosité TEMT6000 pour mesurer la lumière ambiante, un microcontrôleur pour traiter les données, et un écran LCD pour afficher les résultats.
+
+## Objectifs du projet
+
+- **Mesure de la luminosité** : Conversion de la lumière ambiante en unités de Lux à l’aide du capteur TEMT6000.
+- **Traitement des données** : Conversion des données analogiques en numériques via le module ADC du microcontrôleur.
+- **Affichage en temps réel** : Affichage dynamique des résultats sur un écran LCD 16x2.
+
+## Contenu du dépôt
+
+Ce dépôt contient les fichiers suivants :
+
+### Fichiers sources
+
+- **[0 - signal_carré.asm](./0%20-%20signal_carré.asm)** : Génération d’un signal carré pour validation des temporisations.
+- **[1 - CAN.asm](./1%20-%20CAN.asm)** : Configuration et gestion du module ADC pour la conversion des signaux analogiques en numériques.
+- **[2 - LCD_Ligne1_Ligne2.asm](./2%20-%20LCD_Ligne1_Ligne2.asm)** : Gestion de l’affichage des données sur l’écran LCD.
+- **[3 - BCD_ASCII.asm](./3%20-%20BCD_ASCII.asm)** : Conversion des données numériques (Binaire → BCD → ASCII) pour l’affichage.
+- **[4 - LuxMètre.asm](./4%20-%20LuxMètre.asm)** : Code principal, intégrant toutes les fonctionnalités, de la capture des données jusqu’à leur affichage en Lux.
+
+### Autres fichiers
+
+- **[README.md](./README.md)** : Ce fichier.
+- **[images/Luxmetre_PCB.png](./images/Luxmetre_PCB.png)** : Schéma du circuit du luxmètre.
+  
 ---
 
-## Structure du Projet
-
-Le projet est divisé en deux parties principales :
-
-1. **Hardware** : Conception et assemblage des composants électroniques nécessaires.
-2. **Software** : Programmation en assembleur pour le microcontrôleur, incluant la gestion des données capturées et leur affichage.
-
----
-
-## 1. Hardware
-
-### Composants Utilisés
-
-- **Microcontrôleur PIC16F876A** : Cœur du système, responsable du traitement des données.
-- **Capteur de luminosité TEMT6000** : Capte la lumière ambiante et fournit une tension analogique.
-- **Écran LCD 16x2** : Affiche les résultats en Lux.
-- **Régulateur de tension L7805** : Alimente le circuit avec une tension stable de 5V.
-- **Divers** :
- - Potentiomètre pour ajuster la luminosité de l’écran.
- - LED et interrupteur pour indiquer et contrôler l’alimentation.
- - Résistances, condensateurs, et diodes pour la stabilité et la sécurité du circuit.
-
-Le matériel a été assemblé sur un PCB conçu sur mesure, optimisant l’espace et la robustesse.
-
-Voici un schéma du circuit du luxmètre :
-![Luxmètre PCB](./images/Luxmetre_PCB.png)
-
----
-
-## 2. Software
-
-Le code source est entièrement écrit en **assembleur** et se trouve dans ce dépôt. Il comprend plusieurs modules interconnectés pour gérer les différentes fonctionnalités du système.
-
-### Codes Inclus
-
-- **`0 - signal_carré.asm`** : Génération d’un signal carré pour validation des temporisations.
-- **`1 - CAN.asm`** : Configuration et gestion du module ADC pour convertir les signaux analogiques en numériques.
-- **`2 - LCD_Ligne1_Ligne2.asm`** : Gestion de l’affichage sur l’écran LCD.
-- **`3 - BCD_ASCII.asm`** : Conversion des données numériques en format lisible pour l’affichage (Binaire → BCD → ASCII).
-- **`4 - LuxMètre.asm`** : Code principal intégrant toutes les fonctionnalités, depuis la capture des données jusqu’à leur affichage en Lux.
-
-### Fonctionnalités Logicielles
-
-- **Lecture de la lumière ambiante** : Les données analogiques captées par le capteur sont converties en numérique via le module ADC du microcontrôleur.
-- **Traitement des données** : Les données brutes sont traitées et converties en unités lisibles (Lux).
-- **Affichage dynamique** : Les résultats sont affichés en temps réel sur un écran LCD.
+Ce projet permet d’acquérir une compréhension pratique et théorique de la conception et de la réalisation d'un luxmètre, en intégrant les aspects matériels et logiciels.
