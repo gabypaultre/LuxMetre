@@ -30,6 +30,9 @@ Le projet est divisé en deux parties principales :
 
 Le matériel a été assemblé sur un PCB conçu sur mesure, optimisant l’espace et la robustesse.
 
+Voici un schéma du circuit du luxmètre :
+![Luxmètre PCB](./images/Luxmetre_PCB.png)
+
 ---
 
 ## 2. Software
