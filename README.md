@@ -58,3 +58,9 @@ Le code source est entièrement écrit en **assembleur** et se trouve dans ce d�
 - MPLAB IDE pour compiler le code assembleur.
 - Un programmateur Pickit pour flasher le microcontrôleur.
 - Une alimentation 5V stable pour le circuit.
+
+### Étapes
+1. **Cloner ce dépôt GitHub** : git clone https://github.com/votre-repo/luxmetre.git
+2. **Compiler et flasher le fichier .HEX sur le PIC16F876A**.
+3. **Connecter les composants selon le schéma du circuit**.
+4. **Alimenter le système et observer les mesures sur l’écran LCD**.
