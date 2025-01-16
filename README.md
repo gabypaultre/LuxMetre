@@ -1,4 +1,4 @@
-# Projet Luxmètre - Système de Mesure de Luminosité
+# Projet Luxmètre - Système de mesure de luminosité
 
 ## Introduction
 
